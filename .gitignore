@@ -1,0 +1,32 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+client/dist/
+dist/
+
+# Local logs and database files
+*.log
+server/logs/
+logs/
+
+# Candidate uploaded files (to prevent leaking personal data on GitHub)
+server/uploads/
+uploads/
+
+# Environment configurations and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.gemini/
+antigravity-ide/

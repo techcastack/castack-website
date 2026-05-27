@@ -1,0 +1,15 @@
+{
+  "name": "castack-monorepo",
+  "version": "1.0.0",
+  "description": "Unified full-stack repository for Castack Enterprise Website",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "install-client": "npm install --prefix client --legacy-peer-deps",
+    "install-server": "npm install --prefix server",
+    "install-all": "npm run install-client && npm run install-server",
+    "seed": "npm run seed --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
