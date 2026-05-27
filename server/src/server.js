@@ -38,7 +38,9 @@ app.use(helmet({
 // CORS Configuration
 const allowedOrigins = [
   'http://localhost:5173', // Vite local development port
-  'http://127.0.0.1:5173'
+  'http://127.0.0.1:5173',
+  'https://castack-website.onrender.com',
+  'https://castack.in'
 ];
 
 app.use(cors({
